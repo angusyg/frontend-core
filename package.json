@@ -1,0 +1,60 @@
+{
+  "name": "frontend-core",
+  "version": "1.0.0",
+  "description": "Frontend core angularjs application to call REST API backend",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsdoc": "node node_modules/jsdoc/jsdoc.js -c node_modules/angular-jsdoc/common/conf.json -t node_modules/angular-jsdoc/default -d docs ./README.md -r src",
+    "postinstall": "node ./node_modules/gulp/bin/gulp postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angusyg/frontend-core.git"
+  },
+  "keywords": [
+    "javascript",
+    "angularjs"
+  ],
+  "author": "angusyg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angusyg/frontend-core/issues"
+  },
+  "homepage": "https://github.com/angusyg/frontend-core#readme",
+  "dependencies": {
+    "angular-jsdoc": "^1.5.0",
+    "del": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-plugin-angular": "^3.2.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-jsdoc": "^0.1.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-eslint": "^4.0.2",
+    "gulp-grunt": "^0.5.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.5",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.0",
+    "gulp-util": "^3.0.8",
+    "jsdoc": "^3.5.5",
+    "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "@uirouter/angularjs": "^1.0.15",
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-messages": "^1.6.9",
+    "angular-storage": "0.0.15",
+    "angular-translate": "^2.17.0",
+    "angular-translate-loader-partial": "^2.17.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "ui-bootstrap4": "^3.0.2"
+  }
+}
