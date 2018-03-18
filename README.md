@@ -1,7 +1,7 @@
 Frontend-core
 =============
 
-Frontend core application angularjs module
+Frontend core application angularjs module.
 An angularjs module including several modules to handle basic configuration and calling of REST API.
 
 Features
