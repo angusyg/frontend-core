@@ -32,7 +32,7 @@
       SERVER_ERROR: 500,
     })
     .constant('SECURITY', {
-      ACTIVATED: true,
+      ACTIVATED: false,
       ACCESS_TOKEN: 'JWTToken',
       REFRESH_TOKEN: 'RefreshToken',
     })
@@ -54,6 +54,7 @@
     })
     .constant('PARAMETERS', {
       TOOLTIP_DURATION: 3000,
+      SERVER_LOGGING_ACTIVATED: false,
     })
     .constant('ENDPOINTS', {
       DISCOVER: 'discover',
