@@ -20,17 +20,19 @@ const libJs = [
 const libCss = ['node_modules/bootstrap/dist/css/bootstrap.min.css'];
 const sourceJs = [
   'src/app/**/*.module.js',
-  'src/app/**/*.js'
+  'src/app/**/*.js',
+  '!**/*gulpfile.js',
+  '!**/*.eslintrc.js'
 ];
 const sourceCss = [
   'src/styles/**/*.sass',
   'src/styles/**/*.scss'
 ];
-const indexHtml = 'dist/index.html';
+const indexHtml = './dist/index.html';
 const sourceHtml = ['tests/**/*.html'];
-const destinationJs = 'dist';
-const destinationCss = 'dist';
-const destinationHtml = 'dist';
+const destinationJs = './dist';
+const destinationCss = './dist';
+const destinationHtml = './dist';
 const finalJs = 'frontend.core.js';
 const finalLibJs = 'lib.min.js';
 const esLintJs = ['src/app/**/*.js'];
@@ -114,9 +116,6 @@ gulp.task('uglify', () => {
       mangle: {
         toplevel: true,
       },
-    }),
-    plugins.rename({
-      suffix: '.min',
     }),
     gulp.dest(destinationJs),
     plugins.connect.reload(),

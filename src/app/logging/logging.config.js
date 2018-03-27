@@ -28,7 +28,7 @@
             original(...arguments);
             $.ajax({
               type: 'POST',
-              url: `/logger/${level}`,
+              url: `/api/logger/${level}`,
               contentType: 'application/json',
               data: angular.toJson({
                 url: $window.location.href,
